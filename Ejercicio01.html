@@ -4,16 +4,20 @@
         <title>LAB PWEB2 Ejercicio 01 </title>
     </head>
 
-    <body>
+    <body onload="obtenerFecha()">
 
         <h1>Ejercicio 01</h1>
         <span>Fecha Actual: </span>
-        <span id="fecha">Fecha</span>
+        <span id="fecha" >Fecha</span>
 
     </body>
 
     <script>
-
+        function obtenerFecha(){
+            const fechaActual = new Date();
+            console.log(fechaActual);
+            document.getElementById("fecha").innerHTML = fechaActual;
+        }
 
     </script>
 
