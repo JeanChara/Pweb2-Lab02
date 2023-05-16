@@ -15,8 +15,33 @@
     <script>
         function obtenerFecha(){
             const fechaActual = new Date();
-            console.log(fechaActual);
-            document.getElementById("fecha").innerHTML = fechaActual;
+            const numDia = fechaActual.getDay();
+            var dia = "";
+            switch(numDia){
+                case 0:
+                    dia = "Domingo";
+                    break;
+                case 1:
+                    dia = "Lunes";
+                    break;
+                case 2:
+                    dia = "Martes";
+                    break;
+                case 3:
+                    dia = "Miercoles";
+                    break;
+                case 4:
+                    dia = "Jueves";
+                    break;
+                case 5:
+                    dia = "Viernes";
+                    break;
+                case 6:
+                    dia = "Sabado";
+                    break;
+            }
+            console.log(dia);
+            document.getElementById("fecha").innerHTML = dia;
         }
 
     </script>
