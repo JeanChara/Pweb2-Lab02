@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>LAB PWEB2 Ejercicio 03 </title>
     </head>
 
-    <body>
+    <body onload="diasHasta(2023, 8, 15)">
 
         <h1>Ejercicio 03</h1>
+        <span>Faltan:  </span>
+        <span id="fecha"> </span>
+        <span> dias para el dia de arequipa!</span>
+
 
 
 
     </body>
 
     <script>
+
+        function diasHasta(año, mes, dia){
+            let fechaActual =new Date();
+            let fechaFin = new Date(año, mes-1, dia);
+
+            console.log(fechaFin.toLocaleDateString());
+
+        } 
 
     </script>
 
