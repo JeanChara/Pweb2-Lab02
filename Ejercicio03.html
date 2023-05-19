@@ -24,7 +24,14 @@
             let fechaFin = new Date(año, mes-1, dia);
 
             console.log(fechaFin.toLocaleDateString());
+            let miliSegPorDia=60*60*24*1000;
+            
+            if (fechaActual.getMonth()==mes && fechaActual.getDate()>dia) {
+                fechaFin.setFullYear(fechaFin.getFullYear()+1) ;
+            }
+            let dias = Math.ceil((fechaFin.getTime()-fechaActual.getTime())/(miliSegPorDia));
 
+            document.getElementById("fecha").innerHTML= dias;
         } 
 
     </script>
