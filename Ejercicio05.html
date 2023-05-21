@@ -13,15 +13,27 @@
             <label>Cantidad de valores:</label><br>
             <input type="number" id="cantidad" name="cantidad"><br><br>
             <button type="button" onclick="imprimirTabla()">Generar tabla</button>
-        </form> 
+        </form>
+        <form id = "valores">
+
+        </form>
 
 
     </body>
 
     <script>
         function imprimirTabla(){
-           console.log("aaa");
-           return false;
+            let cantidad = document.getElementById("cantidad").value;
+            let tabla = "";
+            for (var i = 1;i<=cantidad;i++){
+                tabla = tabla+"<label for = 'Valor'> valor "+i+": </label>\n";
+                tabla = tabla+"<input type 'number' id = 'valorAsignado'> </input><br>"
+            }
+            console.log(cantidad);
+            console.log(tabla);
+            document.getElementById("valores").innerHTML=tabla
+
+           
         }
 
     </script>
