@@ -74,6 +74,17 @@
             }
             document.getElementById("Tabla").innerHTML=tabla;
         }
+        function calcularSuma(){
+            const valoresTabla = document.querySelector("#Valores");
+            const valor = valoresTabla.querySelectorAll("#valorAsignado");
+
+            let sumaTotal = 0;
+            for (var i = 0;i<valor.length;i++){
+                sumaTotal += valor[i].valueAsNumber;
+            }
+            var tablaSuma = "<tr><td>SUMA:</td>"+"<td>"+sumaTotal+"</td></tr>";
+            document.getElementById("Tabla").innerHTML+=tablaSuma;
+        }
 
     </script>
 
