@@ -3,37 +3,76 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>LAB PWEB2 Ejercicio 05 </title>
+        <style>
+            .separado{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            }
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>
     </head>
 
     <body>
 
         <h1>Ejercicio 05</h1>
+        <div class="separado">
+            <div style="margin: 0px 30px;">
+                <form>
+                    <label>Cantidad de valores:</label><br>
+                    <input type="number" id="cantidad" name="cantidad"><br><br>
+                    <button type="button" onclick="ingresarValores()">ingresar Valores</button>
 
-        <form>
-            <label>Cantidad de valores:</label><br>
-            <input type="number" id="cantidad" name="cantidad"><br><br>
-            <button type="button" onclick="imprimirTabla()">Generar tabla</button>
-        </form>
-        <form id = "valores">
+        
+                </form>
 
-        </form>
+                <form id = "Valores">
+                </form>
+            </div>
+            <div style="margin: 0px 30px;">
+                <button id = "suma"type="button" onclick="calcularSuma()" style="visibility:hidden;">Sumar valores</button>
+                <table id = "Tabla">
 
+                </table>
+                <button id = "suma"type="button" onclick="calcularSuma()" style="visibility:hidden;">Sumar valores</button>
+
+            </div>
+
+
+        </div>
 
     </body>
 
     <script>
-        function imprimirTabla(){
+        function ingresarValores(){
             let cantidad = document.getElementById("cantidad").value;
-            let tabla = "";
+            let stabla = "";
             for (var i = 1;i<=cantidad;i++){
-                tabla = tabla+"<label for = 'Valor'> valor "+i+": </label>\n";
-                tabla = tabla+"<input type 'number' id = 'valorAsignado'> </input><br>"
+                stabla = stabla+"<label for = 'Valor'> valor "+i+": </label>\n";
+                stabla = stabla+"<input type='number' id = 'valorAsignado' value = 0> </input><br>";
             }
-            console.log(cantidad);
-            console.log(tabla);
-            document.getElementById("valores").innerHTML=tabla
+            stabla = stabla+"<button type='button' onclick='generarTabla()'>Generar Tabla</button>"
+            document.getElementById("Valores").innerHTML=stabla;
+        }
+        function generarTabla(){
+            <!-- visible los botones -->
+            const botonS =document.querySelectorAll("#suma");
+            botonS[0].style.visibility = "visible";
+            botonS[1].style.visibility = "visible";
+            
+            const valoresTabla = document.querySelector("#Valores");
+            const valorNombre = valoresTabla.querySelectorAll("label");
+            const valor = valoresTabla.querySelectorAll("#valorAsignado");
 
-           
+            let tabla = "<tr><th>Nombre</th><th>Valor</th></tr>";
+            for (var i = 0;i<valor.length;i++){
+                tabla = tabla+"<tr><td>"+valorNombre[i].innerHTML+"</td>\n";
+                tabla = tabla+"<td>"+valor[i].valueAsNumber+"</td></tr>\n";
+            }
+            document.getElementById("Tabla").innerHTML=tabla;
         }
 
     </script>
