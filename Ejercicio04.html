@@ -8,11 +8,26 @@
 
         <h1>Ejercicio 04</h1>
 
-
+        <div>
+            <form onsubmit="sinGuiones();return false">
+                <label>Ingrese el codigo de la sesion: </label>
+                <input type="text" id="codigo"></input>
+                <button type="button" onclick="sinGuiones()">remover guiones</button>
+            </form>
+        </div>
+        <div>
+            <span>link sin guiones: </span>
+            <span id="resultado"></span>
+        </div>
 
     </body>
 
     <script>
+        function sinGuiones(){
+            code = document.getElementById("codigo").value;
+            console.log(code);
+
+        }
 
     </script>
 
