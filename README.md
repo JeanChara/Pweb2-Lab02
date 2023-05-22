@@ -35,7 +35,7 @@
 <td>NÚMERO DE PRÁCTICA:</td><td>02</td><td>AÑO LECTIVO:</td><td>2023 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA DE PRESENTACION::</td><td>22/05/2023</td><td>HORA D PRESENTACION:</td><td></td>
+<td>FECHA DE PRESENTACION::</td><td>22/05/2023</td><td>HORA DE PRESENTACION:</td><td></td>
 </tr>
 <tr><td colspan="6">INTEGRANTE(S):
     <ul>
@@ -61,57 +61,60 @@
 
     **- Resolucion:**
 
-    - ![imag](./imag/Imagen1.png)
+    - ![img](./img/imagen1.png)
 
     **- Ejecucion:**
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./img/imagen2.png)
 
 - Ejercicio 02: Escriba una página web que reciba un texto y al presionar un botón muestre el mismo texto invertido en otra sección (div). Por ejemplo si se escribe “Hola”, se mostraría como “aloH”.
 
     **- Resolucion:**
 
-    - ![imag](./imag/Imagen1.png)
+    - ![img](./img/imagen1.png)
 
     **- Ejecucion:**
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./img/imagen2.png))
 
 
 - Ejercicio 03: Escribir una página que muestre cuántos días faltan para el día de Arequipa!
 
     **- Resolucion:**
 
-    - ![imag](./imag/Imagen1.png)
+    - ![img](./img/imagen1.png)
 
     **- Ejecucion:**
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./img/imagen2.png)
+
 - Ejercicio 04: Escribir un página que reciba el URL de la sesión de google meet de hoy y devuelva el código de la sesión sin guiones separadores
 
     **- Resolucion:**
 
-    - ![imag](./imag/Imagen1.png)
+    - ![img](./img/imagen1.png)
 
     **- Ejecucion:**
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./img/imagen2.png)
+
 - Ejercicio 05: Escribir una página que permita calcular las suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámicamente, junto con otro botón de envió para calcular la suma.
 
     **- Resolucion:**
 
-    - ![imag](./imag/Imagen1.png)
+    - ![img](./img/imagen1.png)
 
     **- Ejecucion:**
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./img/imagen2.png)
+
 - Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
 
     **- Link:**
 
     - Grupo: https://flip.com/46b3e747
 
-    - ![imag](./imag/Imagen2.png)
+    - ![img](./imag/imagen2.png)
 #
 
 ## CUESTIONARIO
@@ -121,7 +124,7 @@
 
 
 
- ¿Se puede modificar la solución usando map? ¿Cómo?
+- ¿Se puede modificar la solución usando map? ¿Cómo?
 
 
 
