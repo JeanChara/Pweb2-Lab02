@@ -2,24 +2,42 @@
 <html>
     <head>
         <title>LAB PWEB2 Ejercicio 02 </title>
+        <style>
+            span{
+                font-size: larger;
+            }
+        </style>
     </head>
 
     <body>
 
         <h1>Ejercicio 02</h1>
-        <form>
-            <label>Ingrese la palabra a invertir: </label>
-            <input type="text" id="palabra"></input>
-            <button type="button" onclick="invertirPalabra()">Invertir Palabra</button>
-        </form>
-        <p id="resultado"></p>
-        
+        <div>
+            <form onsubmit="invertirPalabra();return false">
+                <label>Ingrese la palabra a invertir: </label>
+                <input type="text" id="palabra"></input>
+                <button type="button" onclick="invertirPalabra()">Invertir Palabra</button>
+            </form>
+        </div>
+        <div>
+            <span>Palabra invertida: </span>
+            <span id="resultado"></span>
+        </div>
+
+
     </body>
 
     <script>
+        
         function invertirPalabra(){
             var pal = document.getElementById("palabra").value;
-            console.log(pal);
+            let palInvertida = "";
+            for(var i = pal.length;i>0;i--){
+                palInvertida += pal.substring(i-1,i);
+                console.log(palInvertida);
+            }
+            document.getElementById("resultado").innerHTML = palInvertida;
+            return false;
         }
 
     </script>
