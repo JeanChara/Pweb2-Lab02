@@ -108,10 +108,11 @@
 
     - ![img](./img/imagen13.png)
     - ![img](./img/imagen14.png)
+    - ![img](./img/imagen15.png)
 
     **- Ejecucion:**
 
-    - ![img](./img/imagen15.png)
+    - ![img](./img/imagen16.png)
 
 - Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
 
@@ -119,8 +120,8 @@
 
     - Grupo: https://flip.com/46b3e747
 
-    - ![img](./imag/imagen16.png)
-    - ![img](./img/imagen17.png)
+    - ![img](./imag/imagen17.png)
+    - ![img](./img/imagen18.png)
 #
 
 ## CUESTIONARIO
