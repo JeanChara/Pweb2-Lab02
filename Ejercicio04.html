@@ -25,7 +25,13 @@
     <script>
         function sinGuiones(){
             code = document.getElementById("codigo").value;
-            console.log(code);
+            codeArray = code.split("-");
+            let codeSinGuiones = "";
+            for(var i = 0;i<codeArray.length;i++){
+                codeSinGuiones += codeArray[i];
+            }
+            console.log(codeSinGuiones);
+            document.getElementById("resultado").innerHTML = codeSinGuiones;
 
         }
 
