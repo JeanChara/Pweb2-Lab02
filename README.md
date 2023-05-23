@@ -116,22 +116,26 @@
 
 - Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
 
-    **- Link:**
+    **- Links:**
 
-    - Grupo: https://flip.com/46b3e747
-
-    - ![img](./imag/imagen17.png)
-    - ![img](./img/imagen18.png)
+    - Grupo: https://flip.com/c8579932
+    - Ejercicio 1-4: https://flip.com/s/cYpSYh5HW1HZ
+    - Ejercicio 5: https://flip.com/s/H7Eys-axKLfR
 #
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/ 
+    - ![img](./img/imagen17.png)
+
+    Unexpected 'let': debemos declarar x antes de usarlo en el for.
+    Unexpected 'for': usar for-each.
+    
 - Revisar esta discusión en stackoverflow - https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript ¿Cómo se pueden resolver los warnings?
 
-
-
+se deberia declarar array[] en lugar de array().
 
 - ¿Se puede modificar la solución usando map? ¿Cómo?
+arraygenerator(): es posible crear un arreglo vacio y utilizar map en cada elemento a.map(Math.ceil(Math.random()+(max-min)+min))
 
 
 
